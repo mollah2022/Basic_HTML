@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+         <title>Dancer</title>
+         <style>
+               .container{
+                   position:fixed;
+                   top:50%;
+                   left:50%;
+                   width:20vw;
+                   height:20vw;
+                   transform: translate(-50%,-50%);
+               }
+               .element{
+                   position: absolute;
+                   mix-blend-mode: multiply;
+                   width:20vw;
+                   height: 20vw;
+               }
+               .element::after{
+                 content: "";
+                 display: inline-block;
+                 width: 100%;
+                 aspect-ratio: 1/1;
+                 border: 15px solid rgba(0,0,0,0);
+                 border-bottom-color: magenta;
+                 border-right-color: magenta;
+                 border-radius: 50%;
+                 box-sizing: border-box;
+               }
+               .element::after{
+                 content: "";
+                 display: inline-block;
+                 width: 100%;
+                 aspect-ratio: 1/1;
+                 border: 15px solid rgba(0,0,0,0);
+                 border-bottom-color: red;
+                 border-right-color: red;
+                 border-radius: 50%;
+                 box-sizing: border-box;
+               }
+               .element::after{
+                 content: "";
+                 display: inline-block;
+                 width: 100%;
+                 aspect-ratio: 1/1;
+                 border: 15px solid rgba(0,0,0,0);
+                 border-bottom-color: yellowgreen;
+                 border-right-color:yellowgreen;
+                 border-radius: 50%;
+                 box-sizing: border-box;
+               }
+               .element:nth-child(0n+1){
+                  animation: bounce0 6.5s linear infinite
+               }
+               @keyframes rotate{
+                   
+                   100%{
+                      transform: rotate(320deg) translate(0) translate(0);
+                   }
+               }
+             
+               @keyframes rotate{
+                   0%{
+                       transform: rotate(0deg);
+                   }
+                   100%{
+                      transform: rotate(360deg);
+                   }
+               }
+               body{
+                   margin: 0;
+                   background: #111;
+                   font-family: "Poopins",sans-serif;
+               }
+               *{
+                   box-sizing: border-box;
+               }
+               a{
+                  display: inline-block;
+                  color: #aaa;
+                  margin-top: 20px;
+               }
+         </style>
+    </head>
+
+   <body>
+      <div class="container">
+        <div class="element"></div>
+        <div class="element"></div> 
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+      </div>
+   </body>
+
+</html>
