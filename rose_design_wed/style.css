@@ -1,0 +1,231 @@
+body {
+    background: #0a0a0a;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 40vw;
+    height: 40vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .common {
+    height: 5vw;
+    max-height: 100%;
+    overflow: auto;
+    width: 6vw;
+    margin: auto;
+    max-width: 100%;
+    position: absolute;
+    background-color: rgb(229, 14, 14);
+    border-radius: 0vw 12vw 0vw 15vw;
+    box-shadow: inset 0vw 0vw 0vw 0.1vw #e70808, 0vw 0vw 1vw 0vw #c50909;
+  }
+  
+  .one {
+    transform: rotate(45deg);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 7.5vw;
+  }
+  
+  .two {
+    transform: rotate(90deg);
+    left: 5.5vw;
+    right: 0;
+    top: 0;
+    bottom: 5.5vw;
+  }
+  
+  .three {
+    transform: rotate(135deg);
+    left: 7.5vw;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .four {
+    transform: rotate(180deg);
+    left: 5.5vw;
+    right: 0;
+    top: 5.5vw;
+    bottom: 0;
+  }
+  
+  .five {
+    transform: rotate(225deg);
+    left: 0;
+    right: 0;
+    top: 7.5vw;
+    bottom: 0;
+  }
+  
+  .six {
+    transform: rotate(270deg);
+    left: 0;
+    right: 5.5vw;
+    top: 5.5vw;
+    bottom: 0;
+  }
+  
+  .seven {
+    transform: rotate(315deg);
+    left: 0;
+    right: 7.5vw;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .eight {
+    transform: rotate(360deg);
+    left: 0;
+    right: 5.5vw;
+    top: 0;
+    bottom: 5.5vw;
+  }
+  
+  .one {
+    animation: one 1s ease infinite;
+    -moz-animation: one 1s ease infinite;
+    -webkit-animation: one 1s ease infinite;
+  }
+  
+  @keyframes one {
+    0%,
+    100% {}
+    50% {
+      background: 0;
+      box-shadow: inset 0vw 0vw 0vw .1vw #d21d1d, 0vw 0vw 1.5vw 0vw #c80b0b;
+    }
+  }
+  
+  .two {
+    animation: two 1s .125s ease infinite;
+    -moz-animation: two 1s .125s ease infinite;
+    -webkit-animation: two 1s .125s ease infinite;
+  }
+  
+  @keyframes two {
+    0%,
+    100% {}
+    50% {
+      background: 0;
+      box-shadow: inset 0vw 0vw 0vw .1vw #ad0808, 0vw 0vw 1.5vw 0vw #bf0b0b;
+    }
+  }
+  
+  .three {
+    animation: three 1s .25s ease infinite;
+    -moz-animation: three 1s .25s ease infinite;
+    -webkit-animation: three 1s .25s ease infinite;
+  }
+  
+  @keyframes three {
+    0%,
+    100% {}
+    50% {
+      background: 0;
+      box-shadow: inset 0vw 0vw 0vw .1vw #b50505, 0vw 0vw 1.5vw 0vw #8e0808;
+    }
+  }
+  
+  .four {
+    animation: four 1s .375s ease infinite;
+    -moz-animation: four 1s .375s ease infinite;
+    -webkit-animation: four 1s .375s ease infinite;
+  }
+  
+  @keyframes four {
+    0%,
+    100% {}
+    50% {
+      background: 0;
+      box-shadow: inset 0vw 0vw 0vw .1vw #850404, 0vw 0vw 1.5vw 0vw #ce0a0a;
+    }
+  }
+  
+  .five {
+    animation: five 1s .5s ease infinite;
+    -moz-animation: five 1s .5s ease infinite;
+    -webkit-animation: five 1s .5s ease infinite;
+  }
+  
+  @keyframes five {
+    0%,
+    100% {}
+    50% {
+      background: 0;
+      box-shadow: inset 0vw 0vw 0vw .1vw #d80505, 0vw 0vw 1.5vw 0vw #c90505;
+    }
+  }
+  
+  .six {
+    animation: six 1s .625s ease infinite;
+    -moz-animation: six 1s .625s ease infinite;
+    -webkit-animation: six 1s .625s ease infinite;
+  }
+  
+  @keyframes six {
+    0%,
+    100% {}
+    50% {
+      background: 0;
+      box-shadow: inset 0vw 0vw 0vw .1vw #cc0707, 0vw 0vw 1.5vw 0vw #cb0606;
+    }
+  }
+  
+  .seven {
+    animation: seven 1s .750s ease infinite;
+    -moz-animation: seven 1s .750s ease infinite;
+    -webkit-animation: seven 1s .750s ease infinite;    
+  }
+  
+  @keyframes seven {
+    0%,
+    100% {}
+    50% {
+      background: 0;
+      box-shadow: inset 0vw 0vw 0vw .1vw #c70303, 0vw 0vw 1.5vw 0vw #bf0707;
+    }
+  }
+  
+  .eight {
+    animation: eight 1s .875s ease infinite;
+    -moz-animation: eight 1s .875s ease infinite;
+    -webkit-animation: eight 1s .875s ease infinite;
+  }
+  
+  @keyframes eight {
+    0%,
+    100% {}
+    50% {
+      background: 0;
+      box-shadow: inset 0vw 0vw 0vw .1vw #bf0a0a, 0vw 0vw 1.5vw 0vw #ca0505;
+    }
+  }
+  
+  .container {
+    animation: container 12s linear infinite;
+    -moz-animation: container 12s linear infinite;
+    -webkit-animation: container 12s linear infinite;
+  }
+  
+  @keyframes container {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
