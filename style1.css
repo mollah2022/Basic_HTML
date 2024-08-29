@@ -1,36 +1,13 @@
 *{
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
-div{
-    height: 300px;
-    width: 300px;
-    background-color: blue;
-    margin: 20px;
-    border: 20px solid red;
-    border-radius: 20px;
-    padding: 20px;
-}
-.first{
-    color: aquamarine;
-    font-size: 20px;
-    font-family: sans-serif;
-    text-align: justify;
-}
-.first:hover{
-    color: black;
-    cursor: pointer;
-}
-.second{
-    color: chartreuse;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: justify;
-}
-.second:hover{
-    color: darkgoldenrod;
-    cursor: pointer;
-}
-.divf{
-     color:green;
-     border: 20px solid pink;
+a{
+    text-decoration: none;
+    background-color: aquamarine;
+    text-align: center;
+    color: brown;
+    border: 5px solid;
+    border-color: blueviolet palevioletred goldenrod green;
+    border-radius: 10px;
 }

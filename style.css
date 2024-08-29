@@ -1,11 +1,32 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-div{
+h1{
     background-color: pink;
+    color: aquamarine;
+    border: 10px solid blueviolet;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 60%;
+    width: 60%;
+    border-color: red goldenrod blueviolet green;
 }
-div div{
-    font-size: 20px;
-    font-family: sans-serif;
+p{
+    background-color: aquamarine;
+    color: blueviolet;
+    border: 10px solid blueviolet;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 60%;
+    width: 60%;
+    border-color: red goldenrod rgb(69, 4, 130) green;
+
+}
+p:hover{
+    color: crimson;
+    cursor: pointer;
+}
+p,h1{
+     font-size: 20px;
+     font-family: sans-serif;
+     text-decoration: none;
 }

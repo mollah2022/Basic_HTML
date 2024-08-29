@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: serif;
+    color: palegreen;
+    background-color: tomato;
+    border: 5px solid blueviolet;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+h1:hover{
+    color: aqua;
+    background-color: goldenrod;
+    cursor: pointer;
+}
+label{
+    display: block;
+}
+.gender label{
+    display: inline;
+}
+.submit label{
+     display: block;
+}
