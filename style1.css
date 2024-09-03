@@ -1,13 +1,27 @@
 *{
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
 }
-a{
-    text-decoration: none;
-    background-color: aquamarine;
-    text-align: center;
-    color: brown;
-    border: 5px solid;
-    border-color: blueviolet palevioletred goldenrod green;
-    border-radius: 10px;
+body{
+    background-image: url("mountine.jpeg");
+    background-repeat: no-repeat;
+    width: 100%;
+}
+p{
+ background-color: #eb4e4b36;
+ text-align: center;
+ margin-top: 250px;
+ margin-left: 50px;
+ margin-right: 1000px;
+ padding: 20px;
+ border: 5px solid #eb4d4b;
+ border-radius: 10px;
+ font-size: 18px;
+ font-family: sans-serif;
+ color: blue;
+}
+p:hover{
+    background-color: tomato;
+    color: aquamarine;
+    cursor: pointer;
 }

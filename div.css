@@ -1,0 +1,47 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: coral;
+    margin-top: 20px;
+    border: 10px solid palegreen;
+    border-radius: 20px;
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 255, 0.982);
+}
+.one{
+    background-color: rgba(127, 255, 212, 0.199);
+    color: tomato;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-image: url("free-photo-of-sun-shining-through-a-tree-in-the-woods.jpeg");
+}
+.two{
+    background-color:rgba(128, 0, 128, 0.141);
+    color:wheat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.three{
+    background-color: rgba(255, 192, 203, 0.177);
+    color:blueviolet;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.four{
+    background-color: rgba(139, 0, 0, 0.186);
+    color: aquamarine;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+div:hover{
+    background-color: darkorchid;
+    color: deeppink;
+    cursor: pointer;
+}
+.five{
+    background-color: rgba(255, 248, 220, 0.159);
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+div{
+    margib-r
+}
