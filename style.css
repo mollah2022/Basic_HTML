@@ -1,23 +1,24 @@
-.main{
-    width: 300px;
-    height: 300px;
-    background-color: aqua;
+*{
+    margin: 0;
 }
-.main1{
-    width: 300px;
-    height: 300px;
-    background-color:red;
-    position: absolute;
-    right: 0;
-    top: 0;
+.navbar{
+    background-color: blue;
 }
-.main2{
-    width: 300px;
-    height: 300px;
-    background-color:green;
+.navbar ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
 }
-.main3{
-    width: 300px;
-    height: 300px;
-    background-color:pink;
+.navbar li{
+    margin-right: 0;
 }
+.navbar li a {
+   color: #fff;
+   text-decoration: none;
+   display: block;
+   padding: 12px 15px;
+}
+.navbar li a:hover{
+    background-color: aquamarine;
+}
+
