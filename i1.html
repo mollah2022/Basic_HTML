@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing elements</title>
+</head>
+<body>
+        <ul class="Menu">
+              <li class="One">frist child</li>
+              <li class="One">frist child</li>
+              <li class="One">frist child</li>
+              <li class="mid">Middle child</li>
+              <li class="One">frist child</li>
+              <li class="One">frist child</li>
+              <li class="last">last child</li>
+        </ul>
+
+        <script>
+                let menu = document.querySelector(".Menu");
+                 console.log(menu.firstElementChild);
+                 console.log(menu.lastElementChild);
+                 console.log(menu.children)
+        </script>
+</body>
+</html>
