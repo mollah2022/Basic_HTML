@@ -3,44 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DoM</title>
-    <style>
-          button{
-            background-color: tomato;
-            width: 100px;
-            height: 30px;
-            color: white;
-            border-radius: 10px;
-          }
-    </style>
+    <title>Increase And Decrease Mini-Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-         <div id="main">
-              <h2>Hello JS Bangladesh</h2>
-              <p id="one">This is a frist paragraph </p>
-              <p>This is a Second paragraph </p>
-              <p>This is a Third paragraph </p>
-              <p>This is a four paragraph </p>
-         </div>
-
-         <button>More Change</button>
-
-         <script>
-            let   button =  document.addEventListener("click",function(){
-
-                let para = document.getElementById("one")
-                para.innerHTML="Hello Sajib"
-                para.style.fontSize = "20px"
-                para.style.color = "red"
-                let main = document.getElementById("main")
-                main.style.backgroundColor = "green"
-                main.style.padding = "10px"
-                main.style.borderRadius = "10px"
-                main.style.color = "white"
-                main.style.fontSize = "bold"
-                main.style.margin = "10px"
-                main.style.width  = "200px"
-                });
-         </script>
+        <h1>Increase And Decrease Mini-Project</h1>
+        <div class="counter">
+              <p id="value">0</p>
+              <div class="butto">
+                    <button id="plus" onclick="Increase()">+</button>
+                    <button id="minus" onclick="Decrease()">-</button>
+              </div>
+        </div>
 </body>
 </html>
