@@ -3,43 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onclick</title>
-
-    <style>
-            button{
-                  color: #fff;
-                  background-color: red;
-                  padding: 10px 10px;
-                  border-radius: 4px;
-                  display: inline-block;
-                  margin: 0 auto;
-                  font-size:large;
-                  cursor: pointer;
-            }
-            button:hover{
-                background-color: aquamarine;
-                color: red;
-            }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
 </head>
-<body>
-         <button onclick="alert('hi sajib')">see Time</button>
-         <button onclick="clickMe()">See My Name</button>
-         <script>
-               function clickMe(){
-                 document.write("Hello Sajib");
-               }
-         </script> 
-
-         <button onclick="clickMe()">See Time</button>
-
-         <p id="ID1"></p>
-
-         <script>
-                function clickMe(){
-                   let ID1 =document.getElementById("ID1");
-                   ID1.innerHTML = Date();
-                }
-         </script>
+<body class="bg-gray-200">
+      <div class="sm:flex justify-between items-center bg-cyan-400  text-white text-xl px-6 py-2 shadow-2xl">
+            <h1 class="text-2xl font-bold ">LOGO</h1>
+            <nav>
+                  <ul class="flex space-x-8">
+                      <li "><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Portfolio</a></li>
+                      <li><a href="#">Signup</a></li>
+                  </ul>
+            </nav>
+      </div>
 </body>
 </html>
