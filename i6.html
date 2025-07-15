@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promise Random</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
 </head>
-<body>
-    <script src="./js/i6.js"></script>
+<body class="h-screen bg-gray-300">
+        <div class="h-auto w-96 mx-auto mt-20 bg-white rounded-lg shadow-lg p-6">
+              <h1 class="text-center mb-5 py-2 bg-red-500 text-white font-bold rounded-md">TO DO List</h1>
+              <input type="text" id="todoInput" placeholder="Add a new task..." class="border border-gray-300 rounded-md px-3 py-2 mb-4 mx-3">
+              <button class="border bg-green-400 text-white py-2 px-3 rounded-md" id="btn">Add More</button>
+               
+
+              <div>
+                    <ul id="addlist"></ul>
+              </div>
+        </div>
+
+        <script>
+                let inputbox = document.getElementById("todoInput");
+                let btn = document.getElementById("btn");
+                let addlist = document.getElementById("addlist");
+
+                btn.addEventListener("click",function(){
+                      const valueis = inputbox.value.trim();
+                      if( valueis ==="" || valueis === null){
+                        alert("Please type something!");
+                        return;
+                      } 
+                        let li = document.createElement("li");
+                        li.innerText = valueis;
+                        li.className = "border border-gray-300 rounded-md px-3 py-2 mb-2 list-none text-decoration-none";
+
+                        const deleteBtn = document.createElement("button");
+                        deleteBtn.innerText = "Delete";
+                        deleteBtn.className = "bg-red-500 text-white px-2 py-1 rounded ml-2 ";
+                        deleteBtn.addEventListener("click",function(){
+                            li.remove();
+                        })
+                      li.appendChild(deleteBtn);
+                      addlist.appendChild(li);
+                      inputbox.value = "";
+                      inputbox.focus();
+                }) 
+        </script>
 </body>
 </html>

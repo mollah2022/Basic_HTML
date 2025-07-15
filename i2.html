@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create elements</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
 </head>
 <body>
-        
+         <h1 class="text-center bg-black text-white mb-10">Hello Bangladesh</h1>
+         <div class="flex justify-center items-center">
+               <input type="text" id="myinput" placeholder="type something..." class="border border-gray-300 rounded-md px-3 py-2 mb-4">
+         </div>
 
-    <script>
-            let div = document.createElement("div");
-             div.innerHTML = "<p> Hello Sajib </p>";
-             document.body.appendChild(div)
-    </script>
+         <script>
+               let MYBTN = document.getElementById("myinput");
+               MYBTN.addEventListener("change",function(){
+                alert("Input change to:"+this.value);
+               })
+         </script>
+
+
 </body>
 </html>

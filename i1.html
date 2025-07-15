@@ -3,24 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traversing elements</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
 </head>
 <body>
-        <ul class="Menu">
-              <li class="One">frist child</li>
-              <li class="One">frist child</li>
-              <li class="One">frist child</li>
-              <li class="mid">Middle child</li>
-              <li class="One">frist child</li>
-              <li class="One">frist child</li>
-              <li class="last">last child</li>
-        </ul>
+       <h1>eventLisentear</h1>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut quas laudantium sequi, hic veniam excepturi assumenda atque tempore quaerat ducimus.</p>
+       <button id="btn" class="border px-3 pt-2 bg-black text-white ">Click-Me</button>
 
-        <script>
-                let menu = document.querySelector(".Menu");
-                 console.log(menu.firstElementChild);
-                 console.log(menu.lastElementChild);
-                 console.log(menu.children)
-        </script>
+       <script>
+            let Btn = document.getElementById("btn");
+            Btn.addEventListener("click",function(){
+                alert("Hello People");
+       });
+       </script> -->
+
+       <!-- <h2 id="hoverMe">Mouse এখানে আনো</h2> -->
+
+<script>
+  document.getElementById("hoverMe").addEventListener("mouseover", function() {
+    this.style.color = "red";
+  });
+</script> --> 
+             <!-- <p id="dbl">Double click me</p>
+
+<!-- <!-- <script>
+  <!-- document.getElementById("dbl").addEventListener("dblclick", function() {
+    this.innerText = "Double clicked!";
+  });
+</script> --> -->
+
+<input type="text" id="myInput" placeholder="Type something..." />
+
+<script>
+  document.getElementById("myInput").addEventListener("change", function() {
+    alert("Input changed to: " + this.value);
+  });
+</script>
 </body>
 </html>

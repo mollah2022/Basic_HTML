@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asynchronous Javascript</title>
+  <meta charset="UTF-8">
+  <title>Live Input + List Add</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    #nameList li {
+      padding: 5px 0;
+    }
+    #liveText {
+      color: green;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <script src="./js/i4.js"></script>
+
+  <h2>👤 Type your name:</h2>
+  <input type="text" id="nameInput" placeholder="Enter your name..." />
+  <button id="addBtn">Add to List</button>
+
+  <p>📝 You are typing: <span id="liveText">...</span></p>
+
+  <h3>✅ Added Names:</h3>
+  <ul id="nameList"></ul>
+
+  <script>
+    const nameInput = document.getElementById("nameInput");
+    const addBtn = document.getElementById("addBtn");
+    const nameList = document.getElementById("nameList");
+    const liveText = document.getElementById("liveText");
+
+    // Live typing display
+    nameInput.addEventListener("input", function () {
+      liveText.innerText = nameInput.value || "...";
+    });
+
+    // Add name to list
+    addBtn.addEventListener("click", function () {
+      const name = nameInput.value.trim();
+      if (name !== "") {
+        const li = document.createElement("li");
+        li.innerText = name;
+        nameList.appendChild(li);
+        nameInput.value = ""; // input clear
+        liveText.innerText = "...";
+      } else {
+        alert("Please type a name first!");
+      }
+    });
+  </script>
+
 </body>
 </html>

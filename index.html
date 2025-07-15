@@ -7,18 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-          <div class="h-screen flex items-center justify-center bg-gray-300 hover:bg-yellow-500 transition-all duration-300">
-                  <div class="hover:bg-gray-100 transition-all duration-300 w-96 h-96 bg-white shadow-md rounded-md p-6">
-                          <img class="ring-4 ring-red-600 ring-offset-4 w-24 h-24 mx-auto rounded-full mt-3 "
-                          src="messi-02cl7p44jquaxiwa.jpg" alt="">
-                          <div class="text-center mt-4">
-                              <h3 class="font-extrabold text-2xl mb-4">Sajib Ahmed</h3>
-                              <p class="font-semibold text-xl text-pink-500 mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, ex.</p>
-                          </div>
-                          <div class="flex items-center justify-center">
-                             <button class=" ring-2 ring-offset-2 ring-red-700 shadow-lg  text-xl border px-4 py-2 bg-blue-800 text-white rounded-md hover:bg-green-500 transition-all duration-300 hover:text-red-600">Read-More</button>
-                          </div>
-                  </div>
-          </div>
+       <h1 class="border border-red-500 rounded-md px-3 py-2  bg-black text-white mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, est!</h1>
+       <p id="change" class="border border-red-500 rounded-md px-3 py-2  bg-black text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deleniti dolor quo voluptatibus commodi quis ipsam vero temporibus obcaecati vel.</p>
+       <button onclick="paraChange()" class="border bg-red-900 text-white rounded-lg mt-6 px-3 py-2">Trigger Me</button>
+
+       <script>
+              let x = document.getElementById("change");
+              function paraChange(){
+                x.innerHTML = "lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deleniti dolor quo voluptatibus commodi quis ipsam vero temporibus obcaecati vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deleniti dolor quo voluptatibus commodi quis ipsam vero temporibus obcaecati vel.";
+                x.style.backgroundColor = "pink";
+                x.style.color = 'black';
+              }
+              let newtext = document.createElement("h3");
+              newtext.innerHTML = "This is a new text";
+                newtext.className = "border border-red-500 rounded-md px-3 py-2 bg-black text-white mt-4";
+                document.body.appendChild(newtext)
+       </script>
 </body>
 </html>

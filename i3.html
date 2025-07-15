@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="myForm">
+  <input type="text" placeholder="Your name" />
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+  document.getElementById("myForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // Page reload বন্ধ
+    alert("Form Submitted!");
+  });
+</script>
+
+</body>
+</html>
