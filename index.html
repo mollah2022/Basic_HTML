@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="script.js"></script> -->
     <title>Document</title>
 </head>
 <body>
-       <h1 class="border border-red-500 rounded-md px-3 py-2  bg-black text-white mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, est!</h1>
-       <p id="change" class="border border-red-500 rounded-md px-3 py-2  bg-black text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deleniti dolor quo voluptatibus commodi quis ipsam vero temporibus obcaecati vel.</p>
-       <button onclick="paraChange()" class="border bg-red-900 text-white rounded-lg mt-6 px-3 py-2">Trigger Me</button>
+         <h1>CallBack Function........</h1>
+         <p id="pera"></p>
 
-       <script>
-              let x = document.getElementById("change");
-              function paraChange(){
-                x.innerHTML = "lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deleniti dolor quo voluptatibus commodi quis ipsam vero temporibus obcaecati vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deleniti dolor quo voluptatibus commodi quis ipsam vero temporibus obcaecati vel.";
-                x.style.backgroundColor = "pink";
-                x.style.color = 'black';
-              }
-              let newtext = document.createElement("h3");
-              newtext.innerHTML = "This is a new text";
-                newtext.className = "border border-red-500 rounded-md px-3 py-2 bg-black text-white mt-4";
-                document.body.appendChild(newtext)
-       </script>
+         <script>
+
+                    function myDisplay(value) {
+                        document.getElementById("pera").innerHTML = value;
+                    }
+             
+                  function myFunction(num1 = 0,num2 = 0,CallBack){
+                    let sum = num1 + num2;
+                      if(CallBack) myDisplay(sum);
+                  }
+
+                  myFunction(5, 10,myDisplay);
+         </script>
+
+         
 </body>
 </html>
