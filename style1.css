@@ -1,46 +1,66 @@
-.contract{
-    width: 80%;
-    border: 3px solid #ddd;
-    text-align: center;
-    margin: 20px auto;
-    padding:5%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.contract h2{
-    font-size: 35px;
-    font-weight: bold;
-    margin-top: 0;
+.container {
+  width: 100vw;
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
-.contract p{
-    color: rgb(11, 11, 11);
+.item1 {
+  width: 100%;
+  height: 100%;
+  background-color: tomato;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
 }
-.contract form{
-    margin-top: 25px;
+.item2 {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
 }
-.child_from{
-    width: 100%;
-    margin-bottom: 15px;
-    text-align: left;
+.item3 {
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
 }
-.child_from:last-child{
-    margin-bottom: 0px;
+.item4 {
+  width: 100%;
+  height: 100%;
+  background-color: violet;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
 }
-.child_from label{
-    display: block;
-    margin-bottom: 5px;
+.item5 {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
 }
-.child_from input,textarea{
-    border: 2px solid #ddd;
-    width: 90%;
-    padding: 2%;
-}
-button{
-    display: block;
-    margin: 0 auto;
-    background-color: blueviolet;
-    color: #fff;
-    padding: 10px;
-}
-button:hover{
-    background-color: darkcyan;
-    cursor: pointer;
+.item6 {
+  width: 100%;
+  height: 100%;
+  background-color: cyan;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
 }

@@ -1,32 +1,42 @@
-body{
-    background-color: bisque;
+* {
+  margin: 0;
+  padding: 0;
 }
-h1{
-    text-align: center;
-    background-color: aqua;
-    padding: 15px;
-    width: 60%;
-    margin-left: 20%;
-    border: 3px solid red;
-    border-radius: 15px;
+
+.navbar {
+  background-color: red;
+  width: 100vw;
+  height: 90px;
 }
-.counter{
-    text-align: center;
-    margin-top: 50px;
+.footer {
+  background-color: green;
+  width: 100vw;
+  height: 90px;
 }
-#value{
-    margin-bottom: 30px;
-    font-size: 50px;
-    margin-right: 35px;
-    font-weight: 700;
+.hero {
+  display: flex;
+  width: 100vw;
+  height: 300px;
+  justify-content: space-between;
 }
-button{
-    font-size: 70px;
-    margin-right: 50px;
-    width: 100px;
-    border: 2px solid tomato;
-    border-radius: 10px;
-    color: #000;
-    background-color: pink;
-    cursor: pointer;
+@media screen and (max-width: 650px) {
+  .hero {
+    flex-direction: column;
+    background-color: black;
+  }
+}
+.section {
+  background-color: pink;
+  width: 50%;
+  height: 300px;
+}
+.aside {
+  background-color: blueviolet;
+  width: 50%;
+  height: 300px;
+}
+.containtent {
+  width: 100vw;
+  height: 200px;
+  background-color: aqua;
 }

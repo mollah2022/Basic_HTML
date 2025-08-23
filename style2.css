@@ -1,26 +1,18 @@
-*{
-    padding: 0px;
-    margin: 0px;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 সমান column */
+  grid-template-rows: 100px 100px; /* 2 row */
+  gap: 10px;
+  border: 2px solid black;
 }
-h1{
-    background-color: palegreen;
-    color: deeppink;
-    border: 5px solid goldenrod;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    border-radius: 15px;
-    padding: 13px;
-    width: 50%;
-    height: 60%;
+
+.item {
+  background-color: lightcoral;
+  text-align: center;
+  padding: 20px;
 }
-table,tr,th,td{
-    border: 5px solid;
-    border-color: blueviolet red goldenrod green;
-    border-collapse: collapse;
-    text-align: center;
-    text-align: none;
-    font-size: 25px;
-    font-family: sans-serif;
-    margin: 20px 20px;
-    padding: 12px;
+
+/* Item A দুই column দখল করবে */
+.item1 {
+  grid-column: 1 / 3;
 }
