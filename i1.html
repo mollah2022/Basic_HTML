@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
-</head>
-<body>
-       <h1>eventLisentear</h1>
-       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut quas laudantium sequi, hic veniam excepturi assumenda atque tempore quaerat ducimus.</p>
-       <button id="btn" class="border px-3 pt-2 bg-black text-white ">Click-Me</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Dashboard</title>
+    <link rel="stylesheet" href="i1.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Company Job Dashboard</h1>
+      <button class="btn">Post a Job</button>
+    </header>
 
-       <script>
-            let Btn = document.getElementById("btn");
-            Btn.addEventListener("click",function(){
-                alert("Hello People");
-       });
-       </script> -->
+    <main class="main-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <ul>
+          <li class="active">Dashboard</li>
+          <li>Jobs</li>
+          <li>Applicants</li>
+          <li>Settings</li>
+        </ul>
+      </aside>
 
-       <!-- <h2 id="hoverMe">Mouse এখানে আনো</h2> -->
-
-<script>
-  document.getElementById("hoverMe").addEventListener("mouseover", function() {
-    this.style.color = "red";
-  });
-</script> --> 
-             <!-- <p id="dbl">Double click me</p>
-
-<!-- <!-- <script>
-  <!-- document.getElementById("dbl").addEventListener("dblclick", function() {
-    this.innerText = "Double clicked!";
-  });
-</script> --> -->
-
-<input type="text" id="myInput" placeholder="Type something..." />
-
-<script>
-  document.getElementById("myInput").addEventListener("change", function() {
-    alert("Input changed to: " + this.value);
-  });
-</script>
-</body>
+      <!-- Job Listings -->
+      <section class="jobs">
+        <div class="job-card">
+          <h3>Frontend Developer</h3>
+          <p>Location: Dhaka, Bangladesh</p>
+          <p>Salary: $1000/month</p>
+          <button class="apply-btn">Apply</button>
+        </div>
+        <div class="job-card">
+          <h3>Backend Developer</h3>
+          <p>Location: Chittagong, Bangladesh</p>
+          <p>Salary: $1200/month</p>
+          <button class="apply-btn">Apply</button>
+        </div>
+        <div class="job-card">
+          <h3>UI/UX Designer</h3>
+          <p>Location: Remote</p>
+          <p>Salary: $900/month</p>
+          <button class="apply-btn">Apply</button>
+        </div>
+        <div class="job-card">
+          <h3>Fullstack Developer</h3>
+          <p>Location: Dhaka, Bangladesh</p>
+          <p>Salary: $1500/month</p>
+          <button class="apply-btn">Apply</button>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
